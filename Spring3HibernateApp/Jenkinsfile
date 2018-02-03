@@ -1,6 +1,6 @@
 pipeline {
     agent any
-        stage {
+        stages {
             stage ('compile stage'){
                 steps {
                      withMaven(maven : 'maven-3.5.2') {
